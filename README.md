@@ -30,15 +30,15 @@ For UWP, the DLL uses C++/WinRT(https://moderncpp.com/) and the Client uses C++/
 
 [Build for Desktop App]
 -
-1. Build RadialContrlloer/Desktop/RadialDevice project. Then dll files are created in the RadialContrlloer/Desktop/DLL folder.
-2. Build the RadialContrlloer/Desktop/Client project. Then Client_xxx_xxxx.exe files are crated in the RadialContrlloer/Desktop/App folder
+1. Build RadialController/Desktop/RadialDevice project. Then dll files are created in the RadialController/Desktop/DLL folder.
+2. Build the RadialController/Desktop/Client project. Then Client_xxx_xxxx.exe files are crated in the RadialController/Desktop/App folder
 3. When running in VS Debugger, set the working folder as '$(OutDir)' in Project Settings.
 
 --
 
 [Build for UWP App]
 -
-1. Build RadialContrlloer/UWP/RadialDevice project. Then dll files are created in the RadialContrlloer/UWP/DLL folder.
-2. Build the RadialContrlloer/UWP/Client project. 
+1. Build RadialController/UWP/RadialDevice project. Then dll files are created in the RadialController/UWP/DLL folder.
+2. Build the RadialController/UWP/Client project. 
 
 --
