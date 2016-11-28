@@ -168,11 +168,9 @@ void MainPage::OnRadialDeviceCallbackMenuItemAdded(IRadialDevice* pRadialDevice,
 
 void MainPage::WriteText(Platform::String^ text)
 {
-#ifdef _DEBUG
 	OutputBox->Text += text;
 
 	UpdateConsoleScrollBar();
-#endif
 }
 
 void MainPage::WriteTextW(const WCHAR* wchFormat,...)
