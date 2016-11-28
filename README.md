@@ -22,7 +22,9 @@ For UWP, the DLL uses C++/WinRT(https://moderncpp.com/) and the Client uses C++/
 
 2. Visual Studio 2015 update 3 or later
 
-3. For Desktop version, If you encounter link errors in ddraw.lib, install the Windows Driver Kit.
+3. Windows SDK build 14393 or later
+
+4. For Desktop version, If you encounter link errors in ddraw.lib, install the Windows Driver Kit.
 
 ---
 
