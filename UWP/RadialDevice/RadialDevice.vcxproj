@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0cee5d04-89dd-4583-ab99-3cdfd2ac6173}</ProjectGuid>
+    <Keyword>DynamicLibrary</Keyword>
+    <RootNamespace>RadialDevice</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.14393.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\DLL</OutDir>
+    <TargetName>$(ProjectName)_x86_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\DLL</OutDir>
+    <TargetName>$(ProjectName)_x86_release</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\DLL</OutDir>
+    <TargetName>$(ProjectName)_arm_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\DLL</OutDir>
+    <TargetName>$(ProjectName)_arm_release</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\DLL</OutDir>
+    <TargetName>$(ProjectName)_x64_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\DLL</OutDir>
+    <TargetName>$(ProjectName)_x64_release</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalOptions>/await /std:c++latest /d1permissive- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>RadialDevice.def</ModuleDefinitionFile>
+      <ImportLibrary>../lib/$(TargetName).lib</ImportLibrary>
+      <ProgramDatabaseFile>../symbols/$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalOptions>/await /std:c++latest /d1permissive- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>RadialDevice.def</ModuleDefinitionFile>
+      <ImportLibrary>../lib/$(TargetName).lib</ImportLibrary>
+      <ProgramDatabaseFile>../symbols/$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalOptions>/await /std:c++latest /d1permissive- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>RadialDevice.def</ModuleDefinitionFile>
+      <ImportLibrary>../lib/$(TargetName).lib</ImportLibrary>
+      <ProgramDatabaseFile>../symbols/$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalOptions>/await /std:c++latest /d1permissive- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>RadialDevice.def</ModuleDefinitionFile>
+      <ImportLibrary>../lib/$(TargetName).lib</ImportLibrary>
+      <ProgramDatabaseFile>../symbols/$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalOptions>/await /std:c++latest /d1permissive- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>RadialDevice.def</ModuleDefinitionFile>
+      <ImportLibrary>../lib/$(TargetName).lib</ImportLibrary>
+      <ProgramDatabaseFile>../symbols/$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalOptions>/await /std:c++latest /d1permissive- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>RadialDevice.def</ModuleDefinitionFile>
+      <ImportLibrary>../lib/$(TargetName).lib</ImportLibrary>
+      <ProgramDatabaseFile>../symbols/$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Megayuchi_Common\IRadialDevice.h" />
+    <ClInclude Include="..\Megayuchi_Util\RefCheck.h" />
+    <ClInclude Include="..\Megayuchi_Util\RefCheck_WinRT_Cpp.h" />
+    <ClInclude Include="..\Megayuchi_Util\WriteDebugString.h" />
+    <ClInclude Include="DeviceListener.h" />
+    <ClInclude Include="RadialDevice.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="winrt\base.h" />
+    <ClInclude Include="winrt\ppl.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Activation.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.AppExtensions.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Appointments.AppointmentsProvider.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Appointments.DataProvider.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Appointments.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.AppService.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Background.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Calls.Background.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Calls.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Calls.Provider.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Chat.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.CommunicationBlocking.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Contacts.DataProvider.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Contacts.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Contacts.Provider.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Core.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.DataTransfer.DragDrop.Core.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.DataTransfer.DragDrop.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.DataTransfer.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.DataTransfer.ShareTarget.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Email.DataProvider.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Email.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.ExtendedExecution.Foreground.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.ExtendedExecution.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.LockScreen.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Preview.Notes.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Resources.Core.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Resources.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Resources.Management.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Search.Core.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Search.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.SocialInfo.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.SocialInfo.Provider.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Store.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Store.LicenseManagement.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Store.Preview.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Store.Preview.InstallControl.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.UserDataAccounts.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.UserDataAccounts.Provider.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.UserDataAccounts.SystemAccess.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.VoiceCommands.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Wallet.h" />
+    <ClInclude Include="winrt\Windows.ApplicationModel.Wallet.System.h" />
+    <ClInclude Include="winrt\Windows.Data.Html.h" />
+    <ClInclude Include="winrt\Windows.Data.Json.h" />
+    <ClInclude Include="winrt\Windows.Data.Pdf.h" />
+    <ClInclude Include="winrt\Windows.Data.Text.h" />
+    <ClInclude Include="winrt\Windows.Data.Xml.Dom.h" />
+    <ClInclude Include="winrt\Windows.Data.Xml.Xsl.h" />
+    <ClInclude Include="winrt\Windows.Devices.Adc.h" />
+    <ClInclude Include="winrt\Windows.Devices.Adc.Provider.h" />
+    <ClInclude Include="winrt\Windows.Devices.AllJoyn.h" />
+    <ClInclude Include="winrt\Windows.Devices.Background.h" />
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.Advertisement.h" />
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.Background.h" />
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.GenericAttributeProfile.h" />
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.h" />
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.Rfcomm.h" />
+    <ClInclude Include="winrt\Windows.Devices.Custom.h" />
+    <ClInclude Include="winrt\Windows.Devices.Enumeration.h" />
+    <ClInclude Include="winrt\Windows.Devices.Enumeration.Pnp.h" />
+    <ClInclude Include="winrt\Windows.Devices.Geolocation.Geofencing.h" />
+    <ClInclude Include="winrt\Windows.Devices.Geolocation.h" />
+    <ClInclude Include="winrt\Windows.Devices.Gpio.h" />
+    <ClInclude Include="winrt\Windows.Devices.Gpio.Provider.h" />
+    <ClInclude Include="winrt\Windows.Devices.h" />
+    <ClInclude Include="winrt\Windows.Devices.HumanInterfaceDevice.h" />
+    <ClInclude Include="winrt\Windows.Devices.I2c.h" />
+    <ClInclude Include="winrt\Windows.Devices.I2c.Provider.h" />
+    <ClInclude Include="winrt\Windows.Devices.Input.h" />
+    <ClInclude Include="winrt\Windows.Devices.Lights.h" />
+    <ClInclude Include="winrt\Windows.Devices.Midi.h" />
+    <ClInclude Include="winrt\Windows.Devices.Perception.h" />
+    <ClInclude Include="winrt\Windows.Devices.Perception.Provider.h" />
+    <ClInclude Include="winrt\Windows.Devices.PointOfService.h" />
+    <ClInclude Include="winrt\Windows.Devices.Portable.h" />
+    <ClInclude Include="winrt\Windows.Devices.Power.h" />
+    <ClInclude Include="winrt\Windows.Devices.Printers.Extensions.h" />
+    <ClInclude Include="winrt\Windows.Devices.Printers.h" />
+    <ClInclude Include="winrt\Windows.Devices.Pwm.h" />
+    <ClInclude Include="winrt\Windows.Devices.Pwm.Provider.h" />
+    <ClInclude Include="winrt\Windows.Devices.Radios.h" />
+    <ClInclude Include="winrt\Windows.Devices.Scanners.h" />
+    <ClInclude Include="winrt\Windows.Devices.Sensors.Custom.h" />
+    <ClInclude Include="winrt\Windows.Devices.Sensors.h" />
+    <ClInclude Include="winrt\Windows.Devices.SerialCommunication.h" />
+    <ClInclude Include="winrt\Windows.Devices.SmartCards.h" />
+    <ClInclude Include="winrt\Windows.Devices.Sms.h" />
+    <ClInclude Include="winrt\Windows.Devices.Spi.h" />
+    <ClInclude Include="winrt\Windows.Devices.Spi.Provider.h" />
+    <ClInclude Include="winrt\Windows.Devices.Usb.h" />
+    <ClInclude Include="winrt\Windows.Devices.WiFi.h" />
+    <ClInclude Include="winrt\Windows.Devices.WiFiDirect.h" />
+    <ClInclude Include="winrt\Windows.Devices.WiFiDirect.Services.h" />
+    <ClInclude Include="winrt\Windows.Embedded.DeviceLockdown.h" />
+    <ClInclude Include="winrt\Windows.Foundation.Collections.h" />
+    <ClInclude Include="winrt\Windows.Foundation.Diagnostics.h" />
+    <ClInclude Include="winrt\Windows.Foundation.h" />
+    <ClInclude Include="winrt\Windows.Foundation.Metadata.h" />
+    <ClInclude Include="winrt\Windows.Gaming.Input.Custom.h" />
+    <ClInclude Include="winrt\Windows.Gaming.Input.ForceFeedback.h" />
+    <ClInclude Include="winrt\Windows.Gaming.Input.h" />
+    <ClInclude Include="winrt\Windows.Gaming.Preview.GamesEnumeration.h" />
+    <ClInclude Include="winrt\Windows.Gaming.UI.h" />
+    <ClInclude Include="winrt\Windows.Globalization.Collation.h" />
+    <ClInclude Include="winrt\Windows.Globalization.DateTimeFormatting.h" />
+    <ClInclude Include="winrt\Windows.Globalization.Fonts.h" />
+    <ClInclude Include="winrt\Windows.Globalization.h" />
+    <ClInclude Include="winrt\Windows.Globalization.NumberFormatting.h" />
+    <ClInclude Include="winrt\Windows.Globalization.PhoneNumberFormatting.h" />
+    <ClInclude Include="winrt\Windows.Graphics.DirectX.Direct3D11.h" />
+    <ClInclude Include="winrt\Windows.Graphics.DirectX.h" />
+    <ClInclude Include="winrt\Windows.Graphics.Display.h" />
+    <ClInclude Include="winrt\Windows.Graphics.Effects.h" />
+    <ClInclude Include="winrt\Windows.Graphics.Holographic.h" />
+    <ClInclude Include="winrt\Windows.Graphics.Imaging.h" />
+    <ClInclude Include="winrt\Windows.Graphics.Printing.h" />
+    <ClInclude Include="winrt\Windows.Graphics.Printing.OptionDetails.h" />
+    <ClInclude Include="winrt\Windows.Graphics.Printing3D.h" />
+    <ClInclude Include="winrt\Windows.Management.Core.h" />
+    <ClInclude Include="winrt\Windows.Management.Deployment.h" />
+    <ClInclude Include="winrt\Windows.Management.Deployment.Preview.h" />
+    <ClInclude Include="winrt\Windows.Management.Orchestration.h" />
+    <ClInclude Include="winrt\Windows.Management.Workplace.h" />
+    <ClInclude Include="winrt\Windows.Media.Audio.h" />
+    <ClInclude Include="winrt\Windows.Media.Capture.Core.h" />
+    <ClInclude Include="winrt\Windows.Media.Capture.Frames.h" />
+    <ClInclude Include="winrt\Windows.Media.Capture.h" />
+    <ClInclude Include="winrt\Windows.Media.Casting.h" />
+    <ClInclude Include="winrt\Windows.Media.ClosedCaptioning.h" />
+    <ClInclude Include="winrt\Windows.Media.ContentRestrictions.h" />
+    <ClInclude Include="winrt\Windows.Media.Core.h" />
+    <ClInclude Include="winrt\Windows.Media.Devices.Core.h" />
+    <ClInclude Include="winrt\Windows.Media.Devices.h" />
+    <ClInclude Include="winrt\Windows.Media.DialProtocol.h" />
+    <ClInclude Include="winrt\Windows.Media.Editing.h" />
+    <ClInclude Include="winrt\Windows.Media.Effects.h" />
+    <ClInclude Include="winrt\Windows.Media.FaceAnalysis.h" />
+    <ClInclude Include="winrt\Windows.Media.h" />
+    <ClInclude Include="winrt\Windows.Media.Import.h" />
+    <ClInclude Include="winrt\Windows.Media.MediaProperties.h" />
+    <ClInclude Include="winrt\Windows.Media.Ocr.h" />
+    <ClInclude Include="winrt\Windows.Media.Playback.h" />
+    <ClInclude Include="winrt\Windows.Media.Playlists.h" />
+    <ClInclude Include="winrt\Windows.Media.PlayTo.h" />
+    <ClInclude Include="winrt\Windows.Media.Protection.h" />
+    <ClInclude Include="winrt\Windows.Media.Protection.PlayReady.h" />
+    <ClInclude Include="winrt\Windows.Media.Render.h" />
+    <ClInclude Include="winrt\Windows.Media.SpeechRecognition.h" />
+    <ClInclude Include="winrt\Windows.Media.SpeechSynthesis.h" />
+    <ClInclude Include="winrt\Windows.Media.Streaming.Adaptive.h" />
+    <ClInclude Include="winrt\Windows.Media.Transcoding.h" />
+    <ClInclude Include="winrt\Windows.Networking.BackgroundTransfer.h" />
+    <ClInclude Include="winrt\Windows.Networking.Connectivity.h" />
+    <ClInclude Include="winrt\Windows.Networking.h" />
+    <ClInclude Include="winrt\Windows.Networking.NetworkOperators.h" />
+    <ClInclude Include="winrt\Windows.Networking.Proximity.h" />
+    <ClInclude Include="winrt\Windows.Networking.PushNotifications.h" />
+    <ClInclude Include="winrt\Windows.Networking.ServiceDiscovery.Dnssd.h" />
+    <ClInclude Include="winrt\Windows.Networking.Sockets.h" />
+    <ClInclude Include="winrt\Windows.Networking.Vpn.h" />
+    <ClInclude Include="winrt\Windows.Perception.Automation.Core.h" />
+    <ClInclude Include="winrt\Windows.Perception.h" />
+    <ClInclude Include="winrt\Windows.Perception.People.h" />
+    <ClInclude Include="winrt\Windows.Perception.Spatial.h" />
+    <ClInclude Include="winrt\Windows.Perception.Spatial.Surfaces.h" />
+    <ClInclude Include="winrt\Windows.Phone.ApplicationModel.h" />
+    <ClInclude Include="winrt\Windows.Phone.Devices.Notification.h" />
+    <ClInclude Include="winrt\Windows.Phone.Devices.Power.h" />
+    <ClInclude Include="winrt\Windows.Phone.Management.Deployment.h" />
+    <ClInclude Include="winrt\Windows.Phone.Media.Devices.h" />
+    <ClInclude Include="winrt\Windows.Phone.Notification.Management.h" />
+    <ClInclude Include="winrt\Windows.Phone.PersonalInformation.h" />
+    <ClInclude Include="winrt\Windows.Phone.PersonalInformation.Provisioning.h" />
+    <ClInclude Include="winrt\Windows.Phone.Speech.Recognition.h" />
+    <ClInclude Include="winrt\Windows.Phone.StartScreen.h" />
+    <ClInclude Include="winrt\Windows.Phone.System.h" />
+    <ClInclude Include="winrt\Windows.Phone.System.Power.h" />
+    <ClInclude Include="winrt\Windows.Phone.System.Profile.h" />
+    <ClInclude Include="winrt\Windows.Phone.System.UserProfile.GameServices.Core.h" />
+    <ClInclude Include="winrt\Windows.Phone.UI.Input.h" />
+    <ClInclude Include="winrt\Windows.Security.Authentication.Identity.Core.h" />
+    <ClInclude Include="winrt\Windows.Security.Authentication.Identity.h" />
+    <ClInclude Include="winrt\Windows.Security.Authentication.Identity.Provider.h" />
+    <ClInclude Include="winrt\Windows.Security.Authentication.OnlineId.h" />
+    <ClInclude Include="winrt\Windows.Security.Authentication.Web.Core.h" />
+    <ClInclude Include="winrt\Windows.Security.Authentication.Web.h" />
+    <ClInclude Include="winrt\Windows.Security.Authentication.Web.Provider.h" />
+    <ClInclude Include="winrt\Windows.Security.Credentials.h" />
+    <ClInclude Include="winrt\Windows.Security.Credentials.UI.h" />
+    <ClInclude Include="winrt\Windows.Security.Cryptography.Certificates.h" />
+    <ClInclude Include="winrt\Windows.Security.Cryptography.Core.h" />
+    <ClInclude Include="winrt\Windows.Security.Cryptography.DataProtection.h" />
+    <ClInclude Include="winrt\Windows.Security.Cryptography.h" />
+    <ClInclude Include="winrt\Windows.Security.EnterpriseData.h" />
+    <ClInclude Include="winrt\Windows.Security.ExchangeActiveSyncProvisioning.h" />
+    <ClInclude Include="winrt\Windows.Services.Maps.Guidance.h" />
+    <ClInclude Include="winrt\Windows.Services.Maps.h" />
+    <ClInclude Include="winrt\Windows.Services.Maps.LocalSearch.h" />
+    <ClInclude Include="winrt\Windows.Services.Store.h" />
+    <ClInclude Include="winrt\Windows.Storage.AccessCache.h" />
+    <ClInclude Include="winrt\Windows.Storage.BulkAccess.h" />
+    <ClInclude Include="winrt\Windows.Storage.Compression.h" />
+    <ClInclude Include="winrt\Windows.Storage.FileProperties.h" />
+    <ClInclude Include="winrt\Windows.Storage.h" />
+    <ClInclude Include="winrt\Windows.Storage.Pickers.h" />
+    <ClInclude Include="winrt\Windows.Storage.Pickers.Provider.h" />
+    <ClInclude Include="winrt\Windows.Storage.Provider.h" />
+    <ClInclude Include="winrt\Windows.Storage.Search.h" />
+    <ClInclude Include="winrt\Windows.Storage.Streams.h" />
+    <ClInclude Include="winrt\Windows.System.Diagnostics.h" />
+    <ClInclude Include="winrt\Windows.System.Display.h" />
+    <ClInclude Include="winrt\Windows.System.h" />
+    <ClInclude Include="winrt\Windows.System.Power.Diagnostics.h" />
+    <ClInclude Include="winrt\Windows.System.Power.h" />
+    <ClInclude Include="winrt\Windows.System.Profile.h" />
+    <ClInclude Include="winrt\Windows.System.Profile.SystemManufacturers.h" />
+    <ClInclude Include="winrt\Windows.System.RemoteDesktop.h" />
+    <ClInclude Include="winrt\Windows.System.RemoteSystems.h" />
+    <ClInclude Include="winrt\Windows.System.Threading.Core.h" />
+    <ClInclude Include="winrt\Windows.System.Threading.h" />
+    <ClInclude Include="winrt\Windows.System.UserProfile.h" />
+    <ClInclude Include="winrt\Windows.UI.ApplicationSettings.h" />
+    <ClInclude Include="winrt\Windows.UI.Composition.Effects.h" />
+    <ClInclude Include="winrt\Windows.UI.Composition.h" />
+    <ClInclude Include="winrt\Windows.UI.Composition.Interactions.h" />
+    <ClInclude Include="winrt\Windows.UI.Core.AnimationMetrics.h" />
+    <ClInclude Include="winrt\Windows.UI.Core.h" />
+    <ClInclude Include="winrt\Windows.UI.h" />
+    <ClInclude Include="winrt\Windows.UI.Input.h" />
+    <ClInclude Include="winrt\Windows.UI.Input.Inking.Core.h" />
+    <ClInclude Include="winrt\Windows.UI.Input.Inking.h" />
+    <ClInclude Include="winrt\Windows.UI.Input.Preview.Injection.h" />
+    <ClInclude Include="winrt\Windows.UI.Input.Spatial.h" />
+    <ClInclude Include="winrt\Windows.UI.Notifications.h" />
+    <ClInclude Include="winrt\Windows.UI.Notifications.Management.h" />
+    <ClInclude Include="winrt\Windows.UI.Popups.h" />
+    <ClInclude Include="winrt\Windows.UI.StartScreen.h" />
+    <ClInclude Include="winrt\Windows.UI.Text.Core.h" />
+    <ClInclude Include="winrt\Windows.UI.Text.h" />
+    <ClInclude Include="winrt\Windows.UI.ViewManagement.h" />
+    <ClInclude Include="winrt\Windows.UI.WebUI.Core.h" />
+    <ClInclude Include="winrt\Windows.UI.WebUI.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Automation.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Automation.Peers.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Automation.Provider.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Automation.Text.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Controls.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Controls.Maps.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Controls.Primitives.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Data.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Documents.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Hosting.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Input.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Interop.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Markup.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Media.Animation.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Media.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Media.Imaging.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Media.Media3D.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Navigation.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Printing.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Resources.h" />
+    <ClInclude Include="winrt\Windows.UI.Xaml.Shapes.h" />
+    <ClInclude Include="winrt\Windows.Web.AtomPub.h" />
+    <ClInclude Include="winrt\Windows.Web.h" />
+    <ClInclude Include="winrt\Windows.Web.Http.Diagnostics.h" />
+    <ClInclude Include="winrt\Windows.Web.Http.Filters.h" />
+    <ClInclude Include="winrt\Windows.Web.Http.h" />
+    <ClInclude Include="winrt\Windows.Web.Http.Headers.h" />
+    <ClInclude Include="winrt\Windows.Web.Syndication.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Megayuchi_Util\RefCheck.cpp" />
+    <ClCompile Include="..\Megayuchi_Util\RefCheck_WinRT_Cpp.cpp" />
+    <ClCompile Include="..\Megayuchi_Util\WriteDebugString.cpp" />
+    <ClCompile Include="DeviceListener.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="RadialDevice.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RadialDevice.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

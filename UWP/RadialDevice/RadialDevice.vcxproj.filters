@@ -1,0 +1,907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{3cb1f80b-f756-443f-a393-167821778d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Body">
+      <UniqueIdentifier>{b349ee23-259b-48b9-90bb-a5823909d856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainEntry">
+      <UniqueIdentifier>{0a8b9763-2502-4ff3-b9e4-f114d4ccff76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{b43ed801-7838-4898-9899-60250313811b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{e5f3571b-c1e5-486f-a5d5-f1d3cc8dd2ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceListener">
+      <UniqueIdentifier>{849a1edc-3570-4177-b089-bbe07182a3f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cppwinrt">
+      <UniqueIdentifier>{e3e42dde-acf2-44ce-b36c-a4f2b87a08ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>MainEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="RadialDevice.cpp">
+      <Filter>Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Megayuchi_Util\RefCheck.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Megayuchi_Util\WriteDebugString.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceListener.cpp">
+      <Filter>DeviceListener</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Megayuchi_Util\RefCheck_WinRT_Cpp.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="RadialDevice.h">
+      <Filter>Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Megayuchi_Common\IRadialDevice.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Megayuchi_Util\RefCheck.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Megayuchi_Util\WriteDebugString.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceListener.h">
+      <Filter>DeviceListener</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\base.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\ppl.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Activation.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.AppExtensions.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Appointments.AppointmentsProvider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Appointments.DataProvider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Appointments.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.AppService.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Background.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Calls.Background.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Calls.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Calls.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Chat.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.CommunicationBlocking.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Contacts.DataProvider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Contacts.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Contacts.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.DataTransfer.DragDrop.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.DataTransfer.DragDrop.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.DataTransfer.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.DataTransfer.ShareTarget.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Email.DataProvider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Email.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.ExtendedExecution.Foreground.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.ExtendedExecution.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.LockScreen.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Preview.Notes.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Resources.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Resources.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Resources.Management.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Search.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Search.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.SocialInfo.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.SocialInfo.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Store.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Store.LicenseManagement.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Store.Preview.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Store.Preview.InstallControl.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.UserDataAccounts.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.UserDataAccounts.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.UserDataAccounts.SystemAccess.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.VoiceCommands.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Wallet.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.ApplicationModel.Wallet.System.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Data.Html.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Data.Json.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Data.Pdf.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Data.Text.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Data.Xml.Dom.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Data.Xml.Xsl.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Adc.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Adc.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.AllJoyn.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Background.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.Advertisement.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.Background.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.GenericAttributeProfile.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Bluetooth.Rfcomm.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Custom.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Enumeration.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Enumeration.Pnp.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Geolocation.Geofencing.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Geolocation.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Gpio.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Gpio.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.HumanInterfaceDevice.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.I2c.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.I2c.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Input.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Lights.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Midi.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Perception.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Perception.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.PointOfService.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Portable.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Power.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Printers.Extensions.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Printers.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Pwm.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Pwm.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Radios.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Scanners.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Sensors.Custom.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Sensors.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.SerialCommunication.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.SmartCards.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Sms.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Spi.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Spi.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.Usb.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.WiFi.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.WiFiDirect.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Devices.WiFiDirect.Services.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Embedded.DeviceLockdown.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Foundation.Collections.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Foundation.Diagnostics.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Foundation.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Foundation.Metadata.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Gaming.Input.Custom.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Gaming.Input.ForceFeedback.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Gaming.Input.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Gaming.Preview.GamesEnumeration.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Gaming.UI.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Globalization.Collation.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Globalization.DateTimeFormatting.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Globalization.Fonts.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Globalization.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Globalization.NumberFormatting.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Globalization.PhoneNumberFormatting.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.DirectX.Direct3D11.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.DirectX.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.Display.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.Effects.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.Holographic.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.Imaging.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.Printing.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.Printing.OptionDetails.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Graphics.Printing3D.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Management.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Management.Deployment.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Management.Deployment.Preview.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Management.Orchestration.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Management.Workplace.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Audio.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Capture.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Capture.Frames.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Capture.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Casting.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.ClosedCaptioning.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.ContentRestrictions.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Devices.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Devices.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.DialProtocol.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Editing.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Effects.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.FaceAnalysis.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Import.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.MediaProperties.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Ocr.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Playback.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Playlists.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.PlayTo.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Protection.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Protection.PlayReady.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Render.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.SpeechRecognition.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.SpeechSynthesis.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Streaming.Adaptive.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Media.Transcoding.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.BackgroundTransfer.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.Connectivity.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.NetworkOperators.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.Proximity.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.PushNotifications.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.ServiceDiscovery.Dnssd.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.Sockets.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Networking.Vpn.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Perception.Automation.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Perception.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Perception.People.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Perception.Spatial.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Perception.Spatial.Surfaces.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.ApplicationModel.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.Devices.Notification.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.Devices.Power.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.Management.Deployment.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.Media.Devices.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.Notification.Management.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.PersonalInformation.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.PersonalInformation.Provisioning.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.Speech.Recognition.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.StartScreen.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.System.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.System.Power.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.System.Profile.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.System.UserProfile.GameServices.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Phone.UI.Input.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Authentication.Identity.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Authentication.Identity.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Authentication.Identity.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Authentication.OnlineId.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Authentication.Web.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Authentication.Web.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Authentication.Web.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Credentials.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Credentials.UI.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Cryptography.Certificates.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Cryptography.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Cryptography.DataProtection.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.Cryptography.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.EnterpriseData.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Security.ExchangeActiveSyncProvisioning.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Services.Maps.Guidance.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Services.Maps.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Services.Maps.LocalSearch.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Services.Store.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.AccessCache.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.BulkAccess.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.Compression.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.FileProperties.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.Pickers.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.Pickers.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.Search.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Storage.Streams.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.Diagnostics.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.Display.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.Power.Diagnostics.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.Power.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.Profile.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.Profile.SystemManufacturers.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.RemoteDesktop.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.RemoteSystems.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.Threading.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.Threading.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.System.UserProfile.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.ApplicationSettings.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Composition.Effects.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Composition.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Composition.Interactions.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Core.AnimationMetrics.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Input.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Input.Inking.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Input.Inking.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Input.Preview.Injection.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Input.Spatial.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Notifications.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Notifications.Management.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Popups.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.StartScreen.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Text.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Text.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.ViewManagement.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.WebUI.Core.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.WebUI.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Automation.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Automation.Peers.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Automation.Provider.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Automation.Text.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Controls.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Controls.Maps.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Controls.Primitives.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Data.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Documents.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Hosting.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Input.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Interop.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Markup.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Media.Animation.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Media.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Media.Imaging.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Media.Media3D.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Navigation.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Printing.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Resources.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.UI.Xaml.Shapes.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Web.AtomPub.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Web.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Web.Http.Diagnostics.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Web.Http.Filters.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Web.Http.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Web.Http.Headers.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="winrt\Windows.Web.Syndication.h">
+      <Filter>cppwinrt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Megayuchi_Util\RefCheck_WinRT_Cpp.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RadialDevice.def">
+      <Filter>MainEntry</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>14596f4f-a216-4019-b0fd-7838c24aa827</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>9e5b46f4-3414-4afe-9b1f-711345ca2d34</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{6ee90aaf-a94b-4556-8272-266a7f365439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLL">
+      <UniqueIdentifier>{f3ef49d5-81f8-4843-8bb7-4248a346d871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{9c83f517-7bbf-4224-9f2f-8c3655b9f624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{7311ef28-d813-47c9-9c68-44c5ab8d4b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Icons">
+      <UniqueIdentifier>{b1e1bd59-d87c-4f3d-a476-5f9019e26b65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="..\Megayuchi_Common\IRadialDevice.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="icon_custom0.png">
+      <Filter>Icons</Filter>
+    </Image>
+    <Image Include="icon_custom1.png">
+      <Filter>Icons</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Client_TemporaryKey.pfx" />
+    <None Include="..\DLL\RadialDevice_x64_debug.dll">
+      <Filter>DLL</Filter>
+    </None>
+    <None Include="..\DLL\RadialDevice_x64_release.dll">
+      <Filter>DLL</Filter>
+    </None>
+    <None Include="..\DLL\RadialDevice_x86_debug.dll">
+      <Filter>DLL</Filter>
+    </None>
+    <None Include="..\DLL\RadialDevice_x86_release.dll">
+      <Filter>DLL</Filter>
+    </None>
+    <None Include="..\DLL\RadialDevice_arm_debug.dll">
+      <Filter>DLL</Filter>
+    </None>
+    <None Include="..\DLL\RadialDevice_arm_release.dll">
+      <Filter>DLL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+  </ItemGroup>
+</Project>

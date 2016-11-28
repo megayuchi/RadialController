@@ -1,0 +1,6 @@
+LIBRARY     RadialDevice
+
+DESCRIPTION 'Radial Device Library for UWP 2016. yuchi'
+
+EXPORTS
+  DllCreateInstance	PRIVATE
